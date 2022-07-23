@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Livvic", sans-serif;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(39, 35, 35);
+}
+
+.wrapper {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  transform: rotate(-30deg);
+}
+
+.kvadrat {
+  margin-right: 30px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  -webkit-animation-name: kvadrat;
+          animation-name: kvadrat;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes kvadrat {
+  0% {
+    left: 0;
+    z-index: 0;
+  }
+  50% {
+    left: 800px;
+    z-index: 3;
+  }
+  100% {
+    left: 0;
+    z-index: 3;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes kvadrat {
+  0% {
+    left: 0;
+    z-index: 0;
+  }
+  50% {
+    left: 800px;
+    z-index: 3;
+  }
+  100% {
+    left: 0;
+    z-index: 3;
+    transform: rotate(360deg);
+  }
+}
+.circle {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(39, 35, 35, 0.548);
+  border-radius: 50%;
+  border: 1px solid white;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+}
+
+.mini-circle {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: rgb(6, 247, 6);
+  -webkit-animation-name: maincircle;
+          animation-name: maincircle;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-left: 30px;
+}
+
+@-webkit-keyframes maincircle {
+  0% {
+    left: 0;
+    z-index: 3;
+  }
+  50% {
+    left: -800px;
+    z-index: 1;
+  }
+  100% {
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes maincircle {
+  0% {
+    left: 0;
+    z-index: 3;
+  }
+  50% {
+    left: -800px;
+    z-index: 1;
+  }
+  100% {
+    left: 0;
+    z-index: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
